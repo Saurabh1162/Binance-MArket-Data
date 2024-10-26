@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binance Market Data</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-financial/dist/chartjs-chart-financial.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <select id="crypto-toggle">
+            <option value="ethusdt">ETH/USDT</option>
+            <option value="bnbusdt">BNB/USDT</option>
+            <option value="dotusdt">DOT/USDT</option>
+        </select>
+        <select id="timeframe-toggle">
+            <option value="1m">1 Minute</option>
+            <option value="3m">3 Minutes</option>
+            <option value="5m">5 Minutes</option>
+        </select>
+        <canvas id="myChart"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
